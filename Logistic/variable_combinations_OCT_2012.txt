@@ -1,0 +1,189 @@
+x <- 1
+models.1.list[[x]] <- gam(pa ~  +s(Init.counts), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Open.500s), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Closed.500s), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Moorland.500s), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(males_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Open.500) , data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Closed.500s(, data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Moorland.500s(, data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(males_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Open.500) + s(Closed.500s(, data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Open.500) + s(Moorland.500s(, data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Open.500) + s(males_94)  , data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Open.500) + s(leks_94)   , data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Closed.500) + s(Moorland.500s(, data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Closed.500) + s(males_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Closed.500) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Moorland.500) + s(males_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Moorland.500) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(males_94) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Open.500) + s(Closed.500s(, data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Open.500) + s(Moorland.500s(, data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Open.500) + s(males_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Open.500) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Closed.500) + s(Moorland.500s(, data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Closed.500) + s(males_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Closed.500) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Moorland.500) + s(males_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Moorland.500) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(males_94) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Open.500) + s(Closed.500) + s(Moorland.500s(, data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Open.500) + s(Closed.500) + s(males_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Open.500) + s(Closed.500) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Open.500) + s(Moorland.500) + s(males_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Open.500) + s(Moorland.500) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Open.500) + s(males_94)   s(leks_94)   , data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Closed.500) + s(Moorland.500) + s(males_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Closed.500) + s(Moorland.500) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Closed.500) + s(males_94) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Moorland.500) + s(males_94) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Open.500) + s(Closed.500) + s(Moorland.500s(, data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Open.500) + s(Closed.500) + s(males_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Open.500) + s(Closed.500) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Open.500) + s(Moorland.500) + s(males_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Open.500) + s(Moorland.500) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Open.500) + s(males_94) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Closed.500) + s(Moorland.500) + s(males_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Closed.500) + s(Moorland.500) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Closed.500) + s(males_94) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Moorland.500) + s(males_94) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Open.500) + s(Closed.500) + s(Moorland.500) + s(males_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Open.500) + s(Closed.500) + s(Moorland.500) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Open.500) + s(Closed.500) + s(males_94) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Open.500) + s(Moorland.500) + s(males_94) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Closed.500) + s(Moorland.500) + s(males_94) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Open.500) + s(Closed.500) + s(Moorland.500) + s(males_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Open.500) + s(Closed.500) + s(Moorland.500) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Open.500) + s(Closed.500) + s(males_94) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Open.500) + s(Moorland.500) + s(males_94) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Init.count) + s(Closed.500) + s(Moorland.500) + s(males_94) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  +s(Open.500) + s(Closed.500) + s(Moorland.500) + s(males_94) + s(leks_94), data=data.1)
+models.1$AIC[x] <- AIC(models.1.list[[x]]
+x <- x + 1 
+models.1.list[[x]] <- gam(pa ~  + s(Init.count) + s(Open.500) + s(Closed.500) + s(Moorland.500) + s(males_94) + s(leks_94), data=data.1)
+ x <- x +1

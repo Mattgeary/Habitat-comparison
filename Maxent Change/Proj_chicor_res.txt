@@ -1,0 +1,125 @@
+res.chi.5
+[[1]]
+
+	Pearson's Chi-squared test with Yates' continuity correction
+
+data:  ch.5 
+X-squared = 0.8421, df = 1, p-value = 0.3588
+
+
+[[2]]
+
+	Pearson's Chi-squared test with Yates' continuity correction
+
+data:  ch.5 
+X-squared = 6.5219, df = 1, p-value = 0.01066
+
+
+[[3]]
+
+	Pearson's Chi-squared test with Yates' continuity correction
+
+data:  ch.5 
+X-squared = 0.1712, df = 1, p-value = 0.6791
+
+
+> res.chi.2k
+[[1]]
+
+	Pearson's Chi-squared test with Yates' continuity correction
+
+data:  ch.2k 
+X-squared = 0.0833, df = 1, p-value = 0.7728
+
+
+[[2]]
+
+	Pearson's Chi-squared test with Yates' continuity correction
+
+data:  ch.2k 
+X-squared = 0.0747, df = 1, p-value = 0.7846
+
+
+[[3]]
+
+	Pearson's Chi-squared test
+
+data:  ch.2k 
+X-squared = 0.8929, df = 2, p-value = 0.6399
+
+
+> res.cor.5
+[[1]]
+
+	Spearman's rank correlation rho
+
+data:  cor.5$mc.5 and cor.5$growth 
+S = 165986, p-value = 0.1555
+alternative hypothesis: true rho is not equal to 0 
+sample estimates:
+      rho 
+0.1396123 
+
+
+[[2]]
+
+	Spearman's rank correlation rho
+
+data:  cor.5$mc.5 and cor.5$growth 
+S = 273530, p-value = 0.007234
+alternative hypothesis: true rho is not equal to 0 
+sample estimates:
+      rho 
+0.2354373 
+
+
+[[3]]
+
+	Spearman's rank correlation rho
+
+data:  cor.5$mc.5 and cor.5$growth 
+S = 156260.8, p-value = 0.0913
+alternative hypothesis: true rho is not equal to 0 
+sample estimates:
+      rho 
+0.1664314 
+
+
+> res.cor.2k
+[[1]]
+
+	Spearman's rank correlation rho
+
+data:  cor.2k$mc.2k and cor.2k$growth 
+S = 184102.2, p-value = 0.6434
+alternative hypothesis: true rho is not equal to 0 
+sample estimates:
+       rho 
+0.04570679 
+
+
+[[2]]
+
+	Spearman's rank correlation rho
+
+data:  cor.2k$mc.2k and cor.2k$growth 
+S = 334835.1, p-value = 0.4706
+alternative hypothesis: true rho is not equal to 0 
+sample estimates:
+       rho 
+0.06407895 
+
+
+[[3]]
+
+	Spearman's rank correlation rho
+
+data:  cor.2k$mc.2k and cor.2k$growth 
+S = 208887.3, p-value = 0.2479
+alternative hypothesis: true rho is not equal to 0 
+sample estimates:
+       rho 
+-0.1143033 
+
+
+
