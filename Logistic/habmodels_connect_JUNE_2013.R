@@ -59,9 +59,9 @@ panel.cor <- function(x, y, digits=2, prefix="", cex.cor)
 }
 
 #pdf("Hab_corr_OCT_2012.pdf", title="Habitat correlations")
-#pairs(data.1[,-c(1,2,3)], lower.panel=panel.smooth, upper.panel=panel.cor, main="1994 - 2000")
-#pairs(data.2[,-c(1,2,3)], lower.panel=panel.smooth, upper.panel=panel.cor, main="2000 - 2008")
-#pairs(data.3[,-c(1,2,3)], lower.panel=panel.smooth, upper.panel=panel.cor, main="1994 - 2008")
+pairs(data.1[,-c(1,2,3)], lower.panel=panel.smooth, upper.panel=panel.cor, main="1994 - 2000")
+pairs(data.2[,-c(1,2,3)], lower.panel=panel.smooth, upper.panel=panel.cor, main="2000 - 2008")
+pairs(data.3[,-c(1,2,3)], lower.panel=panel.smooth, upper.panel=panel.cor, main="1994 - 2008")
 #dev.off()
 ###### Run GAMs #############
 
@@ -694,6 +694,21 @@ models.3$lik <- exp(-0.5*models.3$D.AIC)
 models.3$weight <- models.3$lik/sum(models.3$lik, na.rm = T)
 
 models.3.best <- subset(models.3, subset=(models.3$D.AIC < 2))
+
+models.1.evidence <- matrix(nrow=nrow(models.1.best), ncol=nrow(models.1.best), dimnames=list(models.1.best[,1], models.1.best[,1]))
+for (i in 1:length(models.1.best[,1])){
+  models.1.evidence[i,] <- models.1.best$weight[i]/models.1.best$weight
+}
+
+models.2.evidence <- matrix(nrow=nrow(models.2.best), ncol=nrow(models.2.best), dimnames=list(models.2.best[,1], models.2.best[,1]))
+for (i in 1:length(models.2.best[,1])){
+  models.2.evidence[i,] <- models.2.best$weight[i]/models.2.best$weight
+}
+
+models.3.evidence <- matrix(nrow=nrow(models.3.best), ncol=nrow(models.3.best), dimnames=list(models.3.best[,1], models.3.best[,1]))
+for (i in 1:length(models.3.best[,1])){
+  models.3.evidence[i,] <- models.3.best$weight[i]/models.3.best$weight
+}
 
 #write.csv(models.1, "mods_1_nomoor_OCT_2012.csv", row.names=F)
 #write.csv(models.2, "mods_2_nomoor_OCT_2012.csv", row.names=F)
