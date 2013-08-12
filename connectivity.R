@@ -32,7 +32,7 @@ r.94.b <- rasterize(sp.94.b, alt, background=0,"bk.all...3.")
 sum.map <- focal(r.94, w=527, sum, na.rm=T, pad=T)
 count.map <- focal(r.94.b, w=527, sum, na.rm=T, pad=T)
 bk.all$males_94 <- extract(sum.map, bk.pts)- bk.94$ bk.all...3.
-bk.all$leks_94 <- extract(count.map, bk.pts) - bk.94.bbk.94$ bk.all...3.
+bk.all$leks_94 <- extract(count.map, bk.pts) - bk.94.b$ bk.all...3.
 
 sp.00 <- SpatialPointsDataFrame(bk.pts, bk.00)
 sp.00.b <- SpatialPointsDataFrame(bk.pts, bk.00.b)
@@ -44,8 +44,8 @@ count.map <- focal(r.00.b, w=527, sum, na.rm=T, pad=T)
 bk.all$males_00 <- extract(sum.map, bk.pts) - bk.00$ bk.all...4.
 bk.all$leks_00 <- extract(count.map, bk.pts) - bk.00.b$ bk.all...4.
 
-sp.08 <- SpatialPointsDataFrame(bk.pts, bk.08, pad=T)
-sp.08.b <- SpatialPointsDataFrame(bk.pts, bk.08.b, pad=T)
+sp.08 <- SpatialPointsDataFrame(bk.pts, bk.08)
+sp.08.b <- SpatialPointsDataFrame(bk.pts, bk.08.b)
 r.08 <- rasterize(sp.08, alt, background=0, "bk.all...5.")
 r.08.b <- rasterize(sp.08.b, alt, background=0, "bk.all...5.")
 

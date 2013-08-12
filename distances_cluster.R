@@ -21,6 +21,10 @@ mean.distances <- mapply(mean, distances)
 sd.distances <- mapply(sd, distances)
 sd.distances[18] <- 0
 
-plot(mean.distances ~ d.x, type="l", ylim=c(6, 11), xlab = "Proximity (years)", ylab = "Euclidean distance between occupancy patterns")
-lines((mean.distances + sd.distances) ~ d.x, lty=2, col="red")
-lines((mean.distances - sd.distances) ~ d.x, lty=2, col="red")
+#png("PapGrouse Years2_v4_Fig_2.png", width = 800, height = 800)
+oldpar <- par(mar=c(5,8,1,1))
+plot(mean.distances ~ d.x, type="l", ylim=c(6, 11), xlab = "Proximity (years)", ylab = "Euclidean distance between\noccupancy patterns", lwd=3, cex.axis = 1.5, cex.lab=1.5)
+lines((mean.distances + sd.distances) ~ d.x, lty=2, col="red", lwd= 3)
+lines((mean.distances - sd.distances) ~ d.x, lty=2, col="red", lwd = 3)
+par(oldpar)
+#dev.off()

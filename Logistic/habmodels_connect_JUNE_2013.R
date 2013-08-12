@@ -710,6 +710,42 @@ for (i in 1:length(models.3.best[,1])){
   models.3.evidence[i,] <- models.3.best$weight[i]/models.3.best$weight
 }
 
+png("PapGrouseYears2_v4_Fig_4.png", width=1200, height = 1000)
+Panel <- function(panel)
+{
+  par(xpd=NA)
+  u <- par('usr')
+  text(u[1]-(u[2]-u[1])*.01, u[4]+(u[4]-u[3])*.04, panel, cex=2)
+  par(xpd=FALSE)
+}
+oldpar <- par(mfrow=c(3,3), mar=c(10,10,2,1), mgp=c(5,1,0), cex.lab=2, cex.axis=1.5)
+
+# 1994 - 2000
+plot(models.1.list[[7]], select=1, ylab="s(Initial lek size, 1.95)", xlab="Initial lek size")
+Panel("(a)")
+plot(models.1.list[[7]], select=2, ylab="s(Proportion of open canopy\nforestry within 0.5 km, 1)", xlab="Proportion of open canopy\nforestry within 0.5 km")
+Panel("(b)")
+plot.new()
+
+# 2000 - 2008
+plot(models.2.list[[30]], select=1, ylab="s(Initial lek size, 1)", xlab="Initial lek size")
+Panel("(c)")
+plot(models.2.list[[30]], select=2, ylab="s(Proportion of moorland\nwithin 0.5 km, 2.65)", xlab="Proportion of moorland\nwithin 0.5 km")
+Panel("(d)")
+plot(models.2.list[[30]], select=2, ylab="s(Number of lekking\nmales within 15 km, 1)", xlab="Number of lekking\nmales within 15 km")
+Panel("(e)")
+
+# 1994 - 2008
+plot(models.3.list[[22]], select=1, ylab="s(Initial lek size, 4.27)", xlab="Initial lek size")
+Panel("(f)")
+plot(models.3.list[[22]], select=2, ylab="s(Proportion of open canopy\nforestry within 0.5 km, 1)", xlab="PropProportion of open canopy\nforestry within 0.5 km")
+Panel("(g)")
+plot(models.3.list[[22]], select=2, ylab="s(Proportion of closed canopy\nforestry within 0.5 km, 1)", xlab="Proportion of closed canopy\nforestry within 0.5 km")
+Panel("(h)")
+
+par(oldpar)
+
+dev.off()
 #write.csv(models.1, "mods_1_nomoor_OCT_2012.csv", row.names=F)
 #write.csv(models.2, "mods_2_nomoor_OCT_2012.csv", row.names=F)
 #write.csv(models.3, "mods_3_nomoor_OCT_2012.csv", row.names=F)
