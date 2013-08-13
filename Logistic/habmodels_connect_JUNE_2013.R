@@ -710,7 +710,7 @@ for (i in 1:length(models.3.best[,1])){
   models.3.evidence[i,] <- models.3.best$weight[i]/models.3.best$weight
 }
 
-png("PapGrouseYears2_v4_Fig_4.png", width=1200, height = 1000)
+#png("PapGrouseYears2_v4_Fig_4.png", width=1200, height = 1000)
 Panel <- function(panel)
 {
   par(xpd=NA)
@@ -745,11 +745,15 @@ Panel("(h)")
 
 par(oldpar)
 
-dev.off()
-#write.csv(models.1, "mods_1_nomoor_OCT_2012.csv", row.names=F)
-#write.csv(models.2, "mods_2_nomoor_OCT_2012.csv", row.names=F)
-#write.csv(models.3, "mods_3_nomoor_OCT_2012.csv", row.names=F)
+#dev.off()
+write.csv(models.1, "mods_1_AUG_2013.csv", row.names=F)
+write.csv(models.2, "mods_2_AUG_2013.csv", row.names=F)
+write.csv(models.3, "mods_3_AUG_2013.csv", row.names=F)
 
-#write.csv(models.1.best, "best_mods_1_nomoor_OCT_2012.csv", row.names=F)
-#write.csv(models.1.best, "best_mods_2_nomoor_OCT_2012.csv", row.names=F)
-#write.csv(models.3.best, "best_mods_3_nomoor_OCT_2012.csv", row.names=F)
+write.csv(models.1.best, "best_mods_1_AUG_2013.csv", row.names=F)
+write.csv(models.1.best, "best_mods_2_AUG_2013.csv", row.names=F)
+write.csv(models.3.best, "best_mods_3_AUG_2013.csv", row.names=F)
+
+write.csv(models.1.evidence, "evidence_models_1.csv", row.names=F)
+write.csv(models.2.evidence, "evidence_models_2.csv", row.names=F)
+write.csv(models.3.evidence, "evidence_models_3.csv", row.names=F)

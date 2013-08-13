@@ -1,0 +1,64 @@
+Init.count
+Open.500
+Closed.500
+Moorland.500
+males_94
+males.94.leks
+Init.count + Open.500 
+Init.count + Closed.500
+Init.count + Moorland.500
+Init.count + males_94
+Init.count + males.94.leks
+Open.500 + Closed.500
+Open.500 + Moorland.500
+Open.500 + males_94  
+Open.500 + males.94.leks   
+Closed.500 + Moorland.500
+Closed.500 + males_94
+Closed.500 + males.94.leks
+Moorland.500 + males_94
+Moorland.500 + males.94.leks
+males_94 + males.94.leks
+Init.count + Open.500 + Closed.500
+Init.count + Open.500 + Moorland.500
+Init.count + Open.500 + males_94
+Init.count + Open.500 + males.94.leks
+Init.count + Closed.500 + Moorland.500
+Init.count + Closed.500 + males_94
+Init.count + Closed.500 + males.94.leks
+Init.count + Moorland.500 + males_94
+Init.count + Moorland.500 + males.94.leks
+Init.count + males_94 + males.94.leks
+Open.500 + Closed.500 + Moorland.500
+Open.500 + Closed.500 + males_94
+Open.500 + Closed.500 + males.94.leks
+Open.500 + Moorland.500 + males_94
+Open.500 + Moorland.500 + males.94.leks
+Open.500 + males_94 + males.94.leks   
+Closed.500 + Moorland.500 + males_94
+Closed.500 + Moorland.500 + males.94.leks
+Closed.500 + males_94 + males.94.leks
+Moorland.500 + males_94 + males.94.leks
+Init.count + Open.500 + Closed.500 + Moorland.500
+Init.count + Open.500 + Closed.500 + males_94
+Init.count + Open.500 + Closed.500 + males.94.leks
+Init.count + Open.500 + Moorland.500 + males_94
+Init.count + Open.500 + Moorland.500 + males.94.leks
+Init.count + Open.500 + males_94 + males.94.leks
+Init.count + Closed.500 + Moorland.500 + males_94
+Init.count + Closed.500 + Moorland.500 + males.94.leks
+Init.count + Closed.500 + males_94 + males.94.leks
+Init.count + Moorland.500 + males_94 + males.94.leks
+Open.500 + Closed.500 + Moorland.500 + males_94
+Open.500 + Closed.500 + Moorland.500 + males.94.leks
+Open.500 + Closed.500 + males_94 + males.94.leks
+Open.500 + Moorland.500 + males_94 + males.94.leks
+Closed.500 + Moorland.500 + males_94 + males.94.leks
+Init.count + Open.500 + Closed.500 + Moorland.500 + males_94
+Init.count + Open.500 + Closed.500 + Moorland.500 + males.94.leks
+Init.count + Open.500 + Closed.500 + males_94 + males.94.leks
+Init.count + Open.500 + Moorland.500 + males_94 + males.94.leks
+Init.count + Closed.500 + Moorland.500 + males_94 + males.94.leks
+Open.500 + Closed.500 + Moorland.500 + males_94 + males.94.leks 
+Init.count + Open.500 + Closed.500 + Moorland.500 + males_94 + males.94.leks 
+
