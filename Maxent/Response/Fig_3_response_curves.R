@@ -1,4 +1,8 @@
-png("PapGrouseYears2_v4_Fig_3.png", height=800, width=1000)
+source("response_data_500.R")
+source("response_data_2k.R")
+
+#png("PapGrouseYears2_v4_Fig_3.png", height=800, width=1000)
+png("PapGrouseYears2_v4_Fig_3_wide.png", height=800, width=1000)
 
 Panel <- function(panel)
 {
@@ -8,17 +12,18 @@ Panel <- function(panel)
   par(xpd=FALSE)
 }
 
-layout(matrix(c(1,2,3,4,5,6,7,8,9,10), nrow=2))
+#layout(matrix(c(1,2,3,4,5,6,7,8,9,10), nrow=2))
+layout(matrix(c(1,2,3,4,5,6,7,8), nrow=2, ncol=4))
 
-oldpar <- par(mar=c(0,0,0,0))
+#oldpar <- par(mar=c(0,0,0,0))
 
-plot(c(1:10) ~ c(1:10), type="n", axes=F, xlab="", ylab="")
-text(5,6, "0.5 km", cex=2, font=4)
+#plot(c(1:10) ~ c(1:10), type="n", axes=F, xlab="", ylab="")
+#text(5,6, "0.5 km", cex=2, font=4)
 
-plot(c(1:10) ~ c(1:10), type="n", axes=F, xlab="", ylab="")
-text(5,6, "2 km", cex=2, font=4)
+#plot(c(1:10) ~ c(1:10), type="n", axes=F, xlab="", ylab="")
+#text(5,6, "2 km", cex=2, font=4)
 
-par(oldpar)
+#par(oldpar)
 
 oldpar <- par( mar=c(15,9,2,1), cex.lab=2, cex.axis=1.5, mgp=c(5,1,0))
 # Grazed
